@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "h h h h"
+        "a a a n"
+        "f f f n"
+    ;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: h;
+    background-image: url("kepek/beer-new_401732638.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    grid-area: n;
+    background: dimgrey;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+	height: 55%;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 2px;
+	padding: 0px;
+    
+    
+}
+nav li {
+    padding: 10px;
+    border: white 2px solid;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    
+}
+
+article {
+    grid-area: a;
+    color: white;
+    background: black;
+	
+}
+
+behuzott {
+	padding: 10px;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+	color:white;
+	background: grey;
+	height: 50px;
+}
+body {
+    background-image: url("kepek/teglafal.jpg");
+}
+
+fieldset {
+    border: blanchedalmond;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+    
+  }
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.column {
+  float: left;
+  width: 33.33%;
+	
+}
+.column img {
+	width: 70%;
+	height:70%;
+	border: white 1px solid;
+	border-radius: 5px;
+	display: block;
+	margin: 5px auto;
+	padding: 3px;
+}
+
+
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+@media only screen and (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "f"
+    ;
+        width: 100%;
+    }
+    header {
+        background-image: none;
+        background: black;
+        color:white;
+	min-height: 50px;
+    }
+
+	nav {
+		height: 150px;
+}
+    
+    
+}

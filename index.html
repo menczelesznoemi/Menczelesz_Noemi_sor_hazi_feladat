@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="sörös házi feladat">
+    <meta name="keywords" content="sör, űrlap, grid">
+    <meta name="author" content="Menczelesz Noémi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menczelesz Noémi</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <main>
+        <header>
+<h1>Ha kell egy jó sör...</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="fajta.html">Sörök fajtái</a></li>
+                <li><a href="tablazat.html">Táblázat</a></li>
+                <li><a href="index.html">Hírlevél</a></li>
+            </ul>
+        </nav>
+        <article>
+<form action="/action_page.php"></form>
+<fieldset>
+<legend>Hírlevél feliratkozás</legend>
+<label for="vnev">Vezetéknév:</label>
+<input type="text" id="vnev" name="vnev"><br>
+<label for="knev">Keresztnév:</label>
+<input type="text" id="knev" name="knev"><br>
+<label for="email">E-mail:</label>
+<input type="text" id="email" name="email">
+</fieldset>
+<fieldset>
+    <legend>Szereti a sört?</legend>
+    <input type="radio" id="igen" name="valasztas">
+    <label for="igen">Igen</label><br>
+    <input type="radio" id="nem" name="valasztas">
+    <label for="nem">Nem</label>
+</fieldset>
+<fieldset>
+    <legend>Melyik a kedvenc márkája?</legend>
+    <input type="checkbox" id="soproni" name="fajta">
+    <label for="soproni">Soproni</label><br>
+    <input type="checkbox" id="heinecken" name="fajta">
+    <label for="heinecken">Heinecken</label><br>
+    <input type="checkbox" id="egyeb" name="fajta">
+    <label for="egyeb">Egyéb</label>
+</fieldset>
+    <label for="kerdes">Írja meg kérdését</label>
+    <textarea name="kerdes" id="" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="Elküld">
+</form>
+        </article>
+
+        <footer>
+            Menczelesz Noémi
+        </footer>
+    </main>
+</body>
+</html>
